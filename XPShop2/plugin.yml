@@ -1,0 +1,10 @@
+main: me.trusthage.other.Main
+name: XPShop
+version: 1.0
+author: TrustHage (Mick Camps)
+
+commands:
+  xpshop:
+    description: open the XPShop.
+  setlevel:
+    description: set your level.
