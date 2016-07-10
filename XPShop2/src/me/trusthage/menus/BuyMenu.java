@@ -12,7 +12,7 @@
 /*    */ {
 /*    */   public void openBuyMenu(Player player)
 /*    */   {
-/* 15 */     Inventory buymenu = Bukkit.createInventory(null, 36, ChatColor.AQUA + "Buy Menu");
+/* 15 */     Inventory buymenu = Bukkit.createInventory(null, 36, "Buy Menu");
 /*    */     
 /* 17 */     ItemStack building = new ItemStack(Material.BRICK);
 /* 18 */     ItemMeta buildingMeta = building.getItemMeta();
