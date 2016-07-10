@@ -33,7 +33,7 @@ import me.trusthage.menus.buy.decoration.DecorP1;
 /*    */   @EventHandler
 /*    */   public void onXPShopClick(InventoryClickEvent e)
 /*    */   {
-/* 35 */     if (!ChatColor.stripColor(e.getInventory().getName()).equalsIgnoreCase("XPShop Main Menu")) { return;
+/* 35 */     if (!ChatColor.stripColor(e.getInventory().getName()).equalsIgnoreCase("Main Menu")) { return;
 /*    */     }
 /* 37 */     Player player = (Player)e.getWhoClicked();
 /* 38 */     e.setCancelled(true);
