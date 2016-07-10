@@ -33,7 +33,7 @@
 /*    */   {
 /* 33 */     ArrayList<String> lore = new ArrayList<String>();
 /*    */     
-/* 35 */     Inventory mainmenu = Bukkit.createInventory(null, 9, "XPShop Main Menu");
+/* 35 */     Inventory mainmenu = Bukkit.createInventory(null, 9, "Main Menu");
 /*    */     
 /* 37 */     ItemStack buy = new ItemStack(Material.BOOK);
 /* 38 */     ItemMeta buyMeta = buy.getItemMeta();
