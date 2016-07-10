@@ -1,54 +1,235 @@
-/*    */ package me.trusthage.menus.buy.building;
-/*    */ 
-/*    */ import net.md_5.bungee.api.ChatColor;
-/*    */ import org.bukkit.Bukkit;
-/*    */ import org.bukkit.Material;
-/*    */ import org.bukkit.entity.Player;
-/*    */ import org.bukkit.inventory.Inventory;
-/*    */ import org.bukkit.inventory.ItemStack;
-/*    */ import org.bukkit.inventory.meta.ItemMeta;
-/*    */ 
-/*    */ 
-/*    */ public class BuildP4
-/*    */ {
-/*    */   public void openBuildBuyP4(Player player)
-/*    */   {
-/* 16 */     Inventory buildp4 = Bukkit.createInventory(null, 54, "Building Blocks             Page: 4");
-/*    */     
-/* 18 */     ItemStack back = new ItemStack(Material.BARRIER);
-/* 19 */     ItemMeta backMeta = back.getItemMeta();
-/* 20 */     ItemStack nextpage = new ItemStack(Material.ENDER_PEARL);
-/* 21 */     ItemMeta nextpageMeta = nextpage.getItemMeta();
-/* 22 */     ItemStack previouspage = new ItemStack(Material.ENDER_PEARL);
-/* 23 */     ItemMeta previouspageMeta = previouspage.getItemMeta();
-/*    */     
-/* 25 */     backMeta.setDisplayName(ChatColor.RED + "Back");
-/* 26 */     back.setItemMeta(backMeta);
-/* 27 */     nextpageMeta.setDisplayName("Next Page");
-/* 28 */     nextpage.setItemMeta(nextpageMeta);
-/* 29 */     previouspageMeta.setDisplayName("Previous Page");
-/* 30 */     previouspage.setItemMeta(previouspageMeta);
-/*    */     
-/* 32 */     buildp4.setItem(45, previouspage);
-/* 33 */     buildp4.setItem(49, back);
-/* 34 */     buildp4.setItem(53, nextpage);
-/*    */     
-/* 36 */     ItemStack line = new ItemStack(Material.STAINED_GLASS_PANE, 1, (short)15);
-/* 37 */     ItemMeta lineMeta = line.getItemMeta();
-/* 38 */     lineMeta.setDisplayName("-");
-/* 39 */     line.setItemMeta(lineMeta);buildp4.setItem(36, line);
-/* 40 */     buildp4.setItem(37, line);
-/* 41 */     buildp4.setItem(38, line);
-/* 42 */     buildp4.setItem(39, line);
-/* 43 */     buildp4.setItem(40, line);
-/* 44 */     buildp4.setItem(41, line);
-/* 45 */     buildp4.setItem(42, line);
-/* 46 */     buildp4.setItem(43, line);
-/* 47 */     buildp4.setItem(44, line);
-/*    */     
-/* 49 */     player.openInventory(buildp4);
-/*    */   }
-/*    */ }
+package me.trusthage.menus.buy.building;
+
+import net.md_5.bungee.api.ChatColor;
+import org.bukkit.Bukkit;
+import org.bukkit.Material;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
+ 
+ 
+public class BuildP4
+{
+	public void openBuildBuyP4(Player player)
+	{
+		Inventory buildp4 = Bukkit.createInventory(null, 54, "Building Blocks             Page: 4");
+     
+		ItemStack back = new ItemStack(Material.BARRIER);
+		ItemMeta backMeta = back.getItemMeta();
+		ItemStack nextpage = new ItemStack(Material.ENDER_PEARL);
+		ItemMeta nextpageMeta = nextpage.getItemMeta();
+		ItemStack previouspage = new ItemStack(Material.ENDER_PEARL);
+		ItemMeta previouspageMeta = previouspage.getItemMeta();
+		ItemStack jungleslab = new ItemStack(Material.WOOD_STEP, 1, (short)3);
+		ItemMeta jungleslabMeta = jungleslab.getItemMeta();
+		ItemStack acaciaslab = new ItemStack(Material.WOOD_STEP, 1, (short)4);
+		ItemMeta acaciaslabMeta = acaciaslab.getItemMeta();
+		ItemStack doakslab = new ItemStack(Material.WOOD_STEP, 1, (short)5);
+		ItemMeta doakslabMeta = doakslab.getItemMeta();
+		ItemStack sandstonestairs = new ItemStack(Material.SANDSTONE_STAIRS);
+		ItemMeta sandstonestairsMeta = sandstonestairs.getItemMeta();
+		ItemStack emeraldore = new ItemStack(Material.EMERALD_ORE);
+		ItemMeta emeraldoreMeta = emeraldore.getItemMeta();
+		ItemStack emeraldblock = new ItemStack(Material.EMERALD_BLOCK);
+		ItemMeta emeraldblockMeta = emeraldblock.getItemMeta();
+		ItemStack sprucestairs = new ItemStack(Material.SPRUCE_WOOD_STAIRS);
+		ItemMeta sprucestairsMeta = sprucestairs.getItemMeta();
+		ItemStack birchstairs = new ItemStack(Material.BIRCH_WOOD_STAIRS);
+		ItemMeta birchstairsMeta = birchstairs.getItemMeta();
+		ItemStack junglestairs = new ItemStack(Material.JUNGLE_WOOD_STAIRS);
+		ItemMeta junglestairsMeta = junglestairs.getItemMeta();
+		ItemStack cobblestonewall = new ItemStack(Material.COBBLE_WALL);
+		ItemMeta cobblestonewallMeta = cobblestonewall.getItemMeta();
+		ItemStack mossystonewall = new ItemStack(Material.COBBLE_WALL, 1, (short)1);
+		ItemMeta mossystonewallMeta = mossystonewall.getItemMeta();
+		ItemStack quartzore = new ItemStack(Material.QUARTZ_ORE);
+		ItemMeta quartzoreMeta = quartzore.getItemMeta();
+		ItemStack quartzblock = new ItemStack(Material.QUARTZ_BLOCK);
+		ItemMeta quartzblockMeta = quartzblock.getItemMeta();
+		ItemStack cquartzblock = new ItemStack(Material.QUARTZ_BLOCK, 1, (short)1);
+		ItemMeta cquartzblockMeta = cquartzblock.getItemMeta();
+		ItemStack pquartzblock = new ItemStack(Material.QUARTZ_BLOCK, 1, (short)2);
+		ItemMeta pquartzblockMeta = pquartzblock.getItemMeta();
+		ItemStack quartzstairs = new ItemStack(Material.QUARTZ_STAIRS);
+		ItemMeta quartzstairsMeta = quartzstairs.getItemMeta();
+		ItemStack whiteclay = new ItemStack(Material.STAINED_CLAY);
+		ItemMeta whiteclayMeta = whiteclay.getItemMeta();
+		ItemStack orangeclay = new ItemStack(Material.STAINED_CLAY, 1, (short)1);
+		ItemMeta orangeclayMeta = orangeclay.getItemMeta();
+		ItemStack magentaclay = new ItemStack(Material.STAINED_CLAY, 1, (short)2);
+		ItemMeta magentaclayMeta = magentaclay.getItemMeta();
+		ItemStack lblueclay = new ItemStack(Material.STAINED_CLAY, 1, (short)3);
+		ItemMeta lblueclayMeta = lblueclay.getItemMeta();
+		ItemStack yellowclay = new ItemStack(Material.STAINED_CLAY, 1, (short)4);
+		ItemMeta yellowclayMeta = yellowclay.getItemMeta();
+		ItemStack limeclay = new ItemStack(Material.STAINED_CLAY, 1, (short)5);
+		ItemMeta limeclayMeta = limeclay.getItemMeta();
+		ItemStack pinkclay = new ItemStack(Material.STAINED_CLAY, 1, (short)6);
+		ItemMeta pinkclayMeta = pinkclay.getItemMeta();
+		ItemStack grayclay = new ItemStack(Material.STAINED_CLAY, 1, (short)7);
+		ItemMeta grayclayMeta = grayclay.getItemMeta();
+		ItemStack lgrayclay = new ItemStack(Material.STAINED_CLAY, 1, (short)8);
+		ItemMeta lgrayclayMeta = lgrayclay.getItemMeta();
+		ItemStack cyanclay = new ItemStack(Material.STAINED_CLAY, 1, (short)9);
+		ItemMeta cyanclayMeta = cyanclay.getItemMeta();
+		ItemStack purpleclay = new ItemStack(Material.STAINED_CLAY, 1, (short)10);
+		ItemMeta purpleclayMeta = purpleclay.getItemMeta();
+		ItemStack blueclay = new ItemStack(Material.STAINED_CLAY, 1, (short)11);
+		ItemMeta blueclayMeta = blueclay.getItemMeta();
+		ItemStack brownclay = new ItemStack(Material.STAINED_CLAY, 1, (short)12);
+		ItemMeta brownclayMeta = brownclay.getItemMeta();
+		ItemStack greenclay = new ItemStack(Material.STAINED_CLAY, 1, (short)13);
+		ItemMeta greenclayMeta = greenclay.getItemMeta();
+		ItemStack redclay = new ItemStack(Material.STAINED_CLAY, 1, (short)14);
+		ItemMeta redclayMeta = redclay.getItemMeta();
+		ItemStack blackclay = new ItemStack(Material.STAINED_CLAY, 1, (short)15);
+		ItemMeta blackclayMeta = blackclay.getItemMeta();
+		ItemStack acacialog = new ItemStack(Material.LOG_2);
+		ItemMeta acacialogMeta = acacialog.getItemMeta();
+		ItemStack doaklog = new ItemStack(Material.LOG_2, 1, (short)1);
+		ItemMeta doaklogMeta = doaklog.getItemMeta();
+		ItemStack acaciastairs = new ItemStack(Material.ACACIA_STAIRS);
+		ItemMeta acaciastairsMeta = acaciastairs.getItemMeta();
+		ItemStack doakstairs = new ItemStack(Material.DARK_OAK_STAIRS);
+		ItemMeta doakstairsMeta = doakstairs.getItemMeta();
+
+    
+		backMeta.setDisplayName(ChatColor.RED + "Back");
+		back.setItemMeta(backMeta);
+		nextpageMeta.setDisplayName("Next Page");
+		nextpage.setItemMeta(nextpageMeta);
+		previouspageMeta.setDisplayName("Previous Page");
+		previouspage.setItemMeta(previouspageMeta);
+		jungleslabMeta.setDisplayName("Jungle Wood Slab 16x:");	
+		jungleslab.setItemMeta(jungleslabMeta);
+		acaciaslabMeta.setDisplayName("Acacia Wood Slab 16x:");	
+		acaciaslab.setItemMeta(acaciaslabMeta);
+		doakslabMeta.setDisplayName("Dark Oak Wood Slab 16x:");
+		doakslab.setItemMeta(doakslabMeta);	
+		sandstonestairsMeta.setDisplayName("Sandstone Stairs 16x:");
+		sandstonestairs.setItemMeta(sandstonestairsMeta);
+		emeraldoreMeta.setDisplayName("Emerald Ore 16x:");
+		emeraldore.setItemMeta(emeraldoreMeta);
+		emeraldblockMeta.setDisplayName("Emerald Block 16x:");
+		emeraldblock.setItemMeta(emeraldblockMeta);
+		sprucestairsMeta.setDisplayName("Spruce Wood Stairs 16x:");
+		sprucestairs.setItemMeta(sprucestairsMeta);
+		birchstairsMeta.setDisplayName("Birch Wood Stairs 16x:");
+		birchstairs.setItemMeta(birchstairsMeta);
+		junglestairsMeta.setDisplayName("Jungle Wood Stairs 16x:");
+		junglestairs.setItemMeta(junglestairsMeta);
+		cobblestonewallMeta.setDisplayName("Cobblestone Wall 16x:");
+		cobblestonewall.setItemMeta(cobblestonewallMeta);
+		mossystonewallMeta.setDisplayName("Mossy Cobblestone Wall 16x:");
+		mossystonewall.setItemMeta(mossystonewallMeta);
+		quartzoreMeta.setDisplayName("Nether Quartz Ore 16x:");
+		quartzore.setItemMeta(quartzoreMeta);
+		quartzblockMeta.setDisplayName("Block of Quartz 16x:");
+		quartzblock.setItemMeta(quartzblockMeta);
+		cquartzblockMeta.setDisplayName("Chiseled Quartz Block 16x:");
+		cquartzblock.setItemMeta(cquartzblockMeta);
+		pquartzblockMeta.setDisplayName("Pillar Quartz Block 16x:");
+		pquartzblock.setItemMeta(pquartzblockMeta);
+		quartzstairsMeta.setDisplayName("Quartz Stairs 16x:");
+		quartzstairs.setItemMeta(quartzstairsMeta);
+		whiteclayMeta.setDisplayName("White Stained Clay 16x:");
+		whiteclay.setItemMeta(whiteclayMeta);
+		orangeclayMeta.setDisplayName("Orange Stained Clay 16x:");
+		orangeclay.setItemMeta(orangeclayMeta);
+		magentaclayMeta.setDisplayName("Magenta Stained Clay 16x:");
+		magentaclay.setItemMeta(magentaclayMeta);
+		lblueclayMeta.setDisplayName("Light Blue Stained Clay 16x:");
+		lblueclay.setItemMeta(lblueclayMeta);
+		yellowclayMeta.setDisplayName("Yellow Stained Clay 16x:");
+		yellowclay.setItemMeta(yellowclayMeta);
+		limeclayMeta.setDisplayName("Lime Stained Clay 16x:");
+		limeclay.setItemMeta(limeclayMeta);
+		pinkclayMeta.setDisplayName("Pink Stained Clay 16x:");
+		pinkclay.setItemMeta(pinkclayMeta);
+		grayclayMeta.setDisplayName("Gray Stained Clay 16x:");
+		grayclay.setItemMeta(grayclayMeta);
+		lgrayclayMeta.setDisplayName("Light Gray Stained Clay 16x:");
+		lgrayclay.setItemMeta(lgrayclayMeta);
+		cyanclayMeta.setDisplayName("Cyan Stained Clay 16x:");
+		cyanclay.setItemMeta(cyanclayMeta);
+		purpleclayMeta.setDisplayName("Purple Stained Clay 16x:");
+		purpleclay.setItemMeta(purpleclayMeta);
+		blueclayMeta.setDisplayName("Blue Stained Clay 16x:");
+		blueclay.setItemMeta(blueclayMeta);
+		brownclayMeta.setDisplayName("Brown Stained Clay 16x:");
+		brownclay.setItemMeta(brownclayMeta);
+		greenclayMeta.setDisplayName("Green Stained Clay 16x:");
+		greenclay.setItemMeta(greenclayMeta);
+		redclayMeta.setDisplayName("Red Stained Clay 16x:");
+		redclay.setItemMeta(redclayMeta);
+		blackclayMeta.setDisplayName("Black Stained Clay 16x:");
+		blackclay.setItemMeta(blackclayMeta);
+		acacialogMeta.setDisplayName("Acacia Wood 16x:");
+		acacialog.setItemMeta(acacialogMeta);
+		doaklogMeta.setDisplayName("Dark Oak Wood 16x:");
+		doaklog.setItemMeta(doaklogMeta);
+		acaciastairsMeta.setDisplayName("Acacia Wood Stairs 16x:");
+		acaciastairs.setItemMeta(acaciastairsMeta);
+		doakstairsMeta.setDisplayName("Dark Oak Wood Stairs 16x:");
+		doakstairs.setItemMeta(doakstairsMeta);
+   
+		buildp4.setItem(45, previouspage);
+		buildp4.setItem(49, back);
+		buildp4.setItem(53, nextpage);
+    
+		ItemStack line = new ItemStack(Material.STAINED_GLASS_PANE, 1, (short)15);
+		ItemMeta lineMeta = line.getItemMeta();
+		lineMeta.setDisplayName("-");
+		line.setItemMeta(lineMeta);buildp4.setItem(36, line);
+		buildp4.setItem(37, line);
+		buildp4.setItem(38, line);
+		buildp4.setItem(39, line);
+		buildp4.setItem(40, line);
+		buildp4.setItem(41, line);
+		buildp4.setItem(42, line);
+		buildp4.setItem(43, line);
+		buildp4.setItem(44, line);
+		buildp4.setItem(0, jungleslab);
+		buildp4.setItem(1, acaciaslab);
+		buildp4.setItem(2, doakslab);
+		buildp4.setItem(3, sandstonestairs);
+		buildp4.setItem(4, emeraldore);
+		buildp4.setItem(5, emeraldblock);
+		buildp4.setItem(6, sprucestairs);
+		buildp4.setItem(7, birchstairs);
+		buildp4.setItem(8, junglestairs);
+		buildp4.setItem(9, cobblestonewall);
+		buildp4.setItem(10, mossystonewall);
+		buildp4.setItem(11, quartzore);
+		buildp4.setItem(12, quartzblock);
+		buildp4.setItem(13, cquartzblock);
+		buildp4.setItem(14, pquartzblock);
+		buildp4.setItem(15, quartzstairs);
+		buildp4.setItem(16, whiteclay);
+		buildp4.setItem(17, orangeclay);
+		buildp4.setItem(18, magentaclay);
+		buildp4.setItem(19, lblueclay);
+		buildp4.setItem(20, yellowclay);
+		buildp4.setItem(21, limeclay);
+		buildp4.setItem(22, pinkclay);
+		buildp4.setItem(23, grayclay);
+		buildp4.setItem(24, lgrayclay);
+		buildp4.setItem(25, cyanclay);
+		buildp4.setItem(26, purpleclay);
+		buildp4.setItem(27, blueclay);
+		buildp4.setItem(28, brownclay);
+		buildp4.setItem(29, greenclay);
+		buildp4.setItem(30, redclay);
+		buildp4.setItem(31, blackclay);
+		buildp4.setItem(32, acacialog);
+		buildp4.setItem(33, doaklog);
+		buildp4.setItem(34, acaciastairs);
+		buildp4.setItem(35, doakstairs);
+
+		player.openInventory(buildp4);
+	} 
+}
 
 
 /* Location:              G:\Java Projects\XPShop.jar!\me\trusthage\menus\buy\building\BuildP4.class
