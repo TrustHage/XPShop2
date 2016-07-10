@@ -185,7 +185,7 @@ public class BuildP3
 		oakslab.setItemMeta(oakslabMeta);
 		spruceslabMeta.setDisplayName("Spruce Wood Slab 16x:");
 		spruceslab.setItemMeta(spruceslabMeta);
-		birchslabMeta.setDisplayName("Birch Wood Slab 16x:");
+		birchslabMeta.setDisplayName("Birch Wood Slab 16x:s");
 		birchslab.setItemMeta(birchslabMeta);
    
 		buildp3.setItem(45, previouspage);
