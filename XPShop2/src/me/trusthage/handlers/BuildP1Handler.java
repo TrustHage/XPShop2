@@ -27,7 +27,7 @@
 /*  29 */     Integer cfg = Integer.valueOf(Main.plugin.getConfig().getInt(e.getCurrentItem().getData().toString()));
 /*  30 */     Integer lvl = Integer.valueOf(player.getLevel());
 /*     */     
-/*  32 */     if (player.getLevel() >= cfg.intValue())
+/*  32 */     if (lvl >= cfg.intValue()){
 /*  33 */       switch (e.getCurrentItem().getType()) {
 /*     */       case STONE: 
 /*  35 */         if (e.getCurrentItem().getData().toString().equals("STONE(1)")) {
@@ -179,8 +179,10 @@
 /*     */       default: 
 /* 182 */         player.closeInventory();
 /* 185 */         break; 
-				} else {
+				}
+				}else {
 /* 186 */       player.sendMessage(ChatColor.RED + "You don't have enough XP to buy that.");
 /*     */     }
 /*     */   }
+
 /*     */ }

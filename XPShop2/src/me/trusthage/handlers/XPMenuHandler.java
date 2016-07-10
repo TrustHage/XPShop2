@@ -11,6 +11,7 @@
 /*    */ import me.trusthage.menus.buy.BDiamond;
 /*    */ import me.trusthage.menus.buy.BGold;
 /*    */ import me.trusthage.menus.buy.building.BuildP1;
+import me.trusthage.menus.buy.decoration.DecorP1;
 /*    */ import me.trusthage.menus.sell.SDiamond;
 /*    */ import me.trusthage.menus.sell.SGold;
 /*    */ import me.trusthage.other.Main;
@@ -24,6 +25,7 @@
 /* 25 */   BGold buygold = new BGold();
 /* 26 */   SGold sellgold = new SGold();
 /* 27 */   BuildP1 buildp1 = new BuildP1();
+		   DecorP1 decorp1 = new DecorP1();
 /*    */   
 /* 29 */   org.bukkit.configuration.file.FileConfiguration config = Main.plugin.getConfig();
 /*    */   
@@ -63,10 +65,13 @@
 /*    */     case BRICK: 
 /* 65 */       buildp1.openBuildBuyP1(player.getPlayer());
 /* 66 */       break;
+			 case DOUBLE_PLANT:
+			   decorp1.openDecorBuyP1(player.getPlayer());
+			   break;
 /*    */     case LAVA_BUCKET: 
 /* 68 */       this.buygold.openGoldBuyMenu(player.getPlayer());
 /* 69 */       break;
-/*    */     case GOLD_BARDING: 
+/*    */     case BARRIER: 
 /* 71 */       this.mainmenu.openGUI(player.getPlayer());
 /* 72 */       break;
 /*    */     default: 
