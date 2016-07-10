@@ -170,7 +170,7 @@
 /* 187 */     back.setItemMeta(backMeta);
 /* 188 */     nextpageMeta.setDisplayName("Next Page");
 /* 189 */     nextpage.setItemMeta(nextpageMeta);
-/* 190 */     previouspageMeta.setDisplayName("Previous Pages");
+/* 190 */     previouspageMeta.setDisplayName("Previous Pags");
 /* 191 */     previouspage.setItemMeta(previouspageMeta);
 /*     */     
 /* 193 */     buildp2.setItem(0, wool);

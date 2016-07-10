@@ -164,7 +164,7 @@
 /* 173 */     sandstone.setItemMeta(sandstoneMeta);
 /* 174 */     chiseledsandstoneMeta.setDisplayName("Chiseled Sandstone 16x:");
 /* 175 */     chiseledsandstone.setItemMeta(chiseledsandstoneMeta);
-/* 176 */     smoothsandstoneMeta.setDisplayName("Smooth Sandstone 16x:s");
+/* 176 */     smoothsandstoneMeta.setDisplayName("Smooth Sandstone 16x:");
 /* 177 */     smoothsandstone.setItemMeta(smoothsandstoneMeta);
 /* 178 */     backMeta.setDisplayName(ChatColor.RED + "Back");
 /* 179 */     back.setItemMeta(backMeta);

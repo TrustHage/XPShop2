@@ -95,7 +95,7 @@ public class BuildP4
 		ItemMeta doakstairsMeta = doakstairs.getItemMeta();
 
     
-		backMeta.setDisplayName(ChatColor.RED + "Backs");
+		backMeta.setDisplayName(ChatColor.RED + "Back");
 		back.setItemMeta(backMeta);
 		nextpageMeta.setDisplayName("Next Page");
 		nextpage.setItemMeta(nextpageMeta);
