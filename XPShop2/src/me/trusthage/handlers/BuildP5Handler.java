@@ -4,15 +4,14 @@
 /*    */ import org.bukkit.entity.Player;
 /*    */ import org.bukkit.event.inventory.InventoryClickEvent;
 
-/*    */ 
-/*    */ import me.trusthage.menus.MainMenu;
+import me.trusthage.menus.BuyMenu;
 /*    */ import me.trusthage.menus.buy.building.BuildP4;
 /*    */ import me.trusthage.other.Main;
 /*    */ 
 /*    */ public class BuildP5Handler implements org.bukkit.event.Listener
 /*    */ {
 /* 16 */   BuildP4 buildp4 = new BuildP4();
-/* 17 */   MainMenu mainmenu = new MainMenu();
+/* 17 */   BuyMenu buymenu = new BuyMenu();
 /*    */   
 /*    */   @org.bukkit.event.EventHandler
 /*    */   public void onBuildP2Blick(InventoryClickEvent e)
@@ -32,7 +31,7 @@
 /* 34 */         this.buildp4.openBuildBuyP4(player.getPlayer());
 /* 35 */         break;
 /*    */       case BARRIER: 
-/* 37 */         this.mainmenu.openGUI(player.getPlayer());
+/* 37 */         buymenu.openBuyMenu(player.getPlayer());
 /* 38 */         break;
 /*    */       default: 
 /* 40 */         player.closeInventory();
