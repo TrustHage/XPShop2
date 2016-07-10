@@ -36,6 +36,8 @@
 /* 36 */     ItemMeta materialsMeta = materials.getItemMeta();
 /* 37 */     ItemStack back = new ItemStack(Material.BARRIER);
 /* 38 */     ItemMeta backMeta = back.getItemMeta();
+			 ItemStack line = new ItemStack(Material.STAINED_GLASS_PANE, 1, (short)15);
+			 ItemMeta lineMeta = line.getItemMeta();
 /*    */     
 /* 40 */     buildingMeta.setDisplayName("Building Blocks");
 /* 41 */     building.setItemMeta(buildingMeta);
@@ -69,6 +71,9 @@
 /*    */     
 /* 70 */     backMeta.setDisplayName(ChatColor.RED + "Back");
 /* 71 */     back.setItemMeta(backMeta);
+
+			 lineMeta.setDisplayName("-");
+			 line.setItemMeta(lineMeta);
 /*    */     
 /* 73 */     buymenu.setItem(31, back);
 /*    */     
@@ -83,6 +88,17 @@
 /* 83 */     buymenu.setItem(13, combat);
 /* 84 */     buymenu.setItem(14, brewing);
 /* 85 */     buymenu.setItem(15, materials);
+
+			 buymenu.setItem(18, line);
+			 buymenu.setItem(19, line);
+			 buymenu.setItem(20, line);
+			 buymenu.setItem(21, line);
+			 buymenu.setItem(22, line);
+			 buymenu.setItem(23, line);
+			 buymenu.setItem(24, line);
+			 buymenu.setItem(25, line);
+			 buymenu.setItem(26, line);
+			 
 /*    */     
 /* 87 */     player.openInventory(buymenu);
 /*    */   }

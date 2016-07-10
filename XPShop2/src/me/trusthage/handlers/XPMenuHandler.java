@@ -59,7 +59,7 @@ import me.trusthage.menus.buy.decoration.DecorP1;
 /* 58 */     Player player = (Player)e.getWhoClicked();
 /* 59 */     e.setCancelled(true);
 /*    */     
-/* 61 */     if ((e.getCurrentItem() == null) || (e.getCurrentItem().getType() == Material.AIR) || (!e.getCurrentItem().hasItemMeta())) { return;
+/* 61 */     if ((e.getCurrentItem() == null) || (e.getCurrentItem().getType() == Material.AIR) || (!e.getCurrentItem().hasItemMeta()) || (e.getCurrentItem().getItemMeta().getDisplayName().equals("-"))) { return;
 /*    */     }
 /* 63 */     switch (e.getCurrentItem().getType()) {
 /*    */     case BRICK: 
