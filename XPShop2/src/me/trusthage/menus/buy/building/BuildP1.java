@@ -94,11 +94,11 @@
 /* 103 */     ItemStack line = new ItemStack(Material.STAINED_GLASS_PANE, 1, (short)15);
 /* 104 */     ItemMeta lineMeta = line.getItemMeta();
 /*     */     
-/* 106 */     stoneMeta.setDisplayName("Stone 16x::");
+/* 106 */     stoneMeta.setDisplayName("Stone 16x:");
 /* 107 */     stone.setItemMeta(stoneMeta);
-/* 108 */     graniteMeta.setDisplayName("Granite 16x::");
+/* 108 */     graniteMeta.setDisplayName("Granite 16x:");
 /* 109 */     granite.setItemMeta(graniteMeta);
-/* 110 */     polishedgraniteMeta.setDisplayName("Polished Granite x16");
+/* 110 */     polishedgraniteMeta.setDisplayName("Polished Granite 16x:");
 /* 111 */     polishedgranite.setItemMeta(polishedgraniteMeta);
 /* 112 */     dioriteMeta.setDisplayName("Diorite 16x:");
 /* 113 */     diorite.setItemMeta(dioriteMeta);
